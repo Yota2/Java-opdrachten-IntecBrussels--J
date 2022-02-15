@@ -19,21 +19,20 @@ public class CharArrayTools {
         }
         return newchar;
     }
-    //public static char[] sort(char[] newchar) {
-       /* char[] token = newchar.toCharArray();
-        for(int i = 0; i<token.length; i++){
-            for(int j = i+1; j<token.length; j++){
-                if(token[i] > token[j]){
-                    char temp = token[i];
-                    token[i] = token[j];
-                    token[j] = temp;
+    public static char[] sort(char[] newchar) {
+        newchar = filterAlphabet(newchar);
+        for(int i = 0; i<newchar.length; i++){
+            for(int j =0; j<(newchar.length-1)-i; j++){
+                if(newchar[j] > newchar[j+1]){
+                    char temp = newchar[j];
+                    newchar[j] = newchar[j+1];
+                    newchar[j] = temp;
                 }
             }
         }
-        System.out.print(Arrays.toString(token));
+       return newchar;
     }
 
-        */
-    //   return newchar;
+
 
 }

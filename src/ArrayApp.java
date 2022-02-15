@@ -25,7 +25,7 @@ public class ArrayApp {
         char[] charArray = str.toCharArray();
         System.out.println(charArray);
         System.out.println("Alphabet are found   : " + Arrays.toString(CharArrayTools.filterAlphabet(charArray)));
-        //System.out.println("Alphabet are sorted   : " + Arrays.toString(CharArrayTools.sort(charArray)));
+        System.out.println("Alphabet are sorted   : " + Arrays.toString(CharArrayTools.sort(charArray)));
         KBD.close();
     }
 
